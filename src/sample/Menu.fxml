@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="330.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+   <children>
+      <Button layoutX="65.0" layoutY="172.0" mnemonicParsing="false" onAction="#gotoEmployee" prefHeight="37.0" prefWidth="147.0" text="EMPLOYEE" />
+      <Button layoutX="65.0" layoutY="230.0" mnemonicParsing="false" onAction="#gotoItem" prefHeight="37.0" prefWidth="147.0" text="FOOD &amp; BEVERAGES" />
+      <Button layoutX="65.0" layoutY="59.0" mnemonicParsing="false" onAction="#gotoOngoing" prefHeight="37.0" prefWidth="147.0" text="ON-GOING" />
+      <Button layoutX="65.0" layoutY="115.0" mnemonicParsing="false" onAction="#gotoHistory" prefHeight="37.0" prefWidth="147.0" text="HISTORY" />
+      <Label fx:id="lStoreID" layoutX="35.0" layoutY="24.0" prefHeight="20.0" prefWidth="50.0" />
+      <Label fx:id="lStoreName" layoutX="109.0" layoutY="24.0" prefHeight="20.0" prefWidth="147.0" />
+      <Label layoutX="35.0" layoutY="4.0" prefHeight="20.0" prefWidth="50.0" text="Store ID" />
+      <Label layoutX="109.0" layoutY="4.0" prefHeight="20.0" prefWidth="80.0" text="Store Name" />
+      <Button layoutX="65.0" layoutY="287.0" mnemonicParsing="false" onAction="#gotoTable" prefHeight="37.0" prefWidth="147.0" text="TABLE" />
+   </children>
+</AnchorPane>

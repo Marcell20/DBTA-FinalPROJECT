@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="627.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TableController">
+   <children>
+      <Button layoutX="34.0" layoutY="151.0" mnemonicParsing="false" onAction="#add" prefHeight="58.0" prefWidth="296.0" text="Add/Edit Tables" />
+      <TextField fx:id="fName" layoutX="34.0" layoutY="103.0" prefHeight="34.0" prefWidth="149.0" />
+      <Label layoutX="34.0" layoutY="74.0" prefHeight="24.0" prefWidth="90.0" text="Table Name" />
+      <TableView fx:id="tableTable" layoutX="34.0" layoutY="225.0" prefHeight="348.0" prefWidth="346.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="105.0" text="ID" />
+            <TableColumn fx:id="col_name" minWidth="0.0" prefWidth="239.0" text="Name" />
+         </columns>
+      </TableView>
+      <Button layoutX="296.0" layoutY="26.0" mnemonicParsing="false" onAction="#back" prefHeight="49.0" prefWidth="84.0" text="HOME" />
+      <Label layoutX="34.0" layoutY="14.0" prefHeight="24.0" prefWidth="65.0" text="Store ID" />
+      <Label fx:id="lStoreID" layoutX="34.0" layoutY="38.0" prefHeight="24.0" prefWidth="65.0" />
+      <Label layoutX="127.0" layoutY="14.0" prefHeight="24.0" prefWidth="114.0" text="Store Name" />
+      <Label fx:id="lStoreName" layoutX="127.0" layoutY="38.0" prefHeight="24.0" prefWidth="114.0" />
+      <Label fx:id="msg" layoutX="34.0" layoutY="588.0" prefHeight="17.0" prefWidth="279.0" />
+      <Button layoutX="334.0" layoutY="182.0" mnemonicParsing="false" onAction="#load_table" text="Load" />
+      <Button layoutX="325.0" layoutY="583.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button layoutX="201.0" layoutY="107.0" mnemonicParsing="false" onAction="#load_selected" text="Load Selected Table" />
+   </children>
+</AnchorPane>

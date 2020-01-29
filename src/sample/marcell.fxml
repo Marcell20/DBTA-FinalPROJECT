@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="659.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox fx:id="comboMenu" layoutX="53.0" layoutY="237.0" prefHeight="40.0" prefWidth="156.0" />
+      <TextField fx:id="tTotal" layoutX="750.0" layoutY="139.0" prefHeight="40.0" prefWidth="156.0" />
+      <Label layoutX="53.0" layoutY="203.0" prefHeight="34.0" prefWidth="118.0" text="CHOOSE MENU" />
+      <Label layoutX="246.0" layoutY="203.0" prefHeight="34.0" prefWidth="60.0" text="QTY" />
+      <Button fx:id="AddButton" layoutX="338.0" layoutY="237.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="107.0" text="ADD " />
+      <Label layoutX="750.0" layoutY="104.0" prefHeight="27.0" prefWidth="156.0" text="TOTAL" />
+      <Label layoutX="53.0" layoutY="117.0" prefHeight="27.0" prefWidth="118.0" text="CASHIER NAME" />
+      <Button fx:id="BPrint" layoutX="729.0" layoutY="471.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="148.0" text="PRINT" />
+      <Button fx:id="BaddMenu" layoutX="796.0" layoutY="388.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="148.0" text="ADD NEW MENU" />
+      <ComboBox fx:id="comboCashier" layoutX="53.0" layoutY="150.0" prefHeight="40.0" prefWidth="156.0" />
+      <Button fx:id="BaddCashier" layoutX="796.0" layoutY="307.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="148.0" text="ADD NEW CASHIER" />
+      <ComboBox fx:id="comboTable" layoutX="408.0" layoutY="150.0" prefHeight="40.0" prefWidth="118.0" />
+      <Label layoutX="416.0" layoutY="117.0" prefHeight="27.0" prefWidth="107.0" text="TABLE NAME" />
+      <ComboBox fx:id="comboWaiter" layoutX="243.0" layoutY="150.0" prefHeight="40.0" prefWidth="148.0" />
+      <Label layoutX="246.0" layoutY="122.0" prefHeight="17.0" prefWidth="118.0" text="WAITER NAME" />
+      <Button fx:id="BCancel" layoutX="898.0" layoutY="471.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="107.0" text="CANCEL" />
+      <ComboBox fx:id="comboStore" layoutX="53.0" layoutY="66.0" prefHeight="40.0" prefWidth="150.0" />
+      <Label layoutX="547.0" layoutY="122.0" prefHeight="17.0" prefWidth="60.0" text="GUEST No" />
+      <Button fx:id="BTdetail" layoutX="803.0" layoutY="577.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="148.0" text="TRANSACTION DETAIL" />
+      <Button fx:id="BaddStore" layoutX="796.0" layoutY="234.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="148.0" text="ADD NEW STORE" />
+      <Label layoutX="53.0" layoutY="33.0" prefHeight="27.0" prefWidth="107.0" text="STORE NAME" />
+      <Label layoutX="247.0" layoutY="33.0" prefHeight="27.0" prefWidth="118.0" text="STORE ADDRESS" />
+      <Label layoutX="427.0" layoutY="35.0" prefHeight="27.0" prefWidth="134.0" text="STORE TELEPHONE" />
+      <TableView fx:id="TransactionList" layoutX="46.0" layoutY="307.0" prefHeight="314.0" prefWidth="626.0">
+         <columns>
+            <TableColumn fx:id="columnName" prefWidth="145.0" text="ItemName" />
+            <TableColumn fx:id="columnType" minWidth="0.0" prefWidth="151.0" text="ItemType" />
+            <TableColumn fx:id="columnQty" prefWidth="73.0" text="ItemQty" />
+            <TableColumn fx:id="columnPrice" prefWidth="111.0" text="ItemPrice" />
+            <TableColumn fx:id="columnTotal" prefWidth="145.0" text="ItemTotal" />
+         </columns>
+      </TableView>
+      <Label fx:id="Laddress" layoutX="244.0" layoutY="66.0" prefHeight="27.0" prefWidth="125.0" />
+      <Label fx:id="LTelephone" layoutX="427.0" layoutY="66.0" prefHeight="27.0" prefWidth="125.0" />
+      <TextField fx:id="tGuest" layoutX="547.0" layoutY="153.0" prefHeight="34.0" prefWidth="60.0" />
+      <TextField fx:id="tQty" layoutX="246.0" layoutY="237.0" prefHeight="40.0" prefWidth="60.0" />
+   </children>
+</AnchorPane>

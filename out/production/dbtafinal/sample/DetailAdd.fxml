@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="673.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DetailAddController">
+   <children>
+      <Label layoutX="34.0" layoutY="71.0" prefHeight="24.0" prefWidth="73.0" text="Item ID" />
+      <Label layoutX="292.0" layoutY="83.0" prefHeight="24.0" prefWidth="90.0" text="Note 1" />
+      <TableView fx:id="tableFood" layoutX="34.0" layoutY="305.0" prefHeight="321.0" prefWidth="256.0">
+         <columns>
+            <TableColumn fx:id="col_idf" prefWidth="39.0" text="ID" />
+            <TableColumn fx:id="col_namef" minWidth="0.0" prefWidth="125.0" text="Name" />
+            <TableColumn fx:id="col_pricef" minWidth="0.0" prefWidth="92.0" text="Price" />
+         </columns>
+      </TableView>
+      <Button layoutX="479.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="49.0" prefWidth="84.0" text="HOME" />
+      <Label layoutX="34.0" layoutY="14.0" prefHeight="24.0" prefWidth="90.0" text="Transaction ID" />
+      <Label fx:id="lTransactionID" layoutX="34.0" layoutY="38.0" prefHeight="24.0" prefWidth="84.0" />
+      <Label fx:id="msg" layoutX="109.0" layoutY="641.0" prefHeight="17.0" prefWidth="388.0" />
+      <Button layoutX="280.0" layoutY="271.0" mnemonicParsing="false" onAction="#load_table" text="Load" />
+      <Button layoutX="35.0" layoutY="201.0" mnemonicParsing="false" onAction="#load_selected_food" prefHeight="27.0" prefWidth="157.0" text="Load Selected Food" />
+      <TextField fx:id="fItemQty" layoutX="35.0" layoutY="157.0" prefHeight="34.0" prefWidth="149.0" />
+      <Label layoutX="34.0" layoutY="127.0" prefHeight="24.0" prefWidth="90.0" text="Item Qty" />
+      <TableView fx:id="tableBeverages" layoutX="314.0" layoutY="305.0" prefHeight="321.0" prefWidth="256.0">
+         <columns>
+            <TableColumn fx:id="col_idb" prefWidth="39.0" text="ID" />
+            <TableColumn fx:id="col_nameb" minWidth="0.0" prefWidth="125.0" text="Name" />
+            <TableColumn fx:id="col_priceb" minWidth="0.0" prefWidth="92.0" text="Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="144.0" layoutY="276.0" prefHeight="17.0" prefWidth="37.0" text="FOOD" />
+      <Label layoutX="406.0" layoutY="276.0" prefHeight="17.0" prefWidth="73.0" text="BEVERAGE" />
+      <Button layoutX="35.0" layoutY="235.0" mnemonicParsing="false" onAction="#load_selected_beverage" prefHeight="27.0" prefWidth="157.0" text="Load Selected Beverage" />
+      <Label layoutX="34.0" layoutY="98.0" prefHeight="24.0" prefWidth="73.0" text="Item Name" />
+      <Label layoutX="129.0" layoutY="66.0" />
+      <Label fx:id="lItemID" layoutX="111.0" layoutY="70.0" prefHeight="27.0" prefWidth="103.0" />
+      <Label fx:id="lItemName" layoutX="111.0" layoutY="97.0" prefHeight="27.0" prefWidth="103.0" />
+      <ComboBox fx:id="cNote1" layoutX="290.0" layoutY="109.0" prefWidth="150.0" />
+      <Label layoutX="292.0" layoutY="148.0" prefHeight="24.0" prefWidth="90.0" text="Note 2" />
+      <ComboBox fx:id="cNote2" layoutX="290.0" layoutY="174.0" prefWidth="150.0" />
+      <Button layoutX="488.0" layoutY="138.0" mnemonicParsing="false" onAction="#add" text="Add" />
+   </children>
+</AnchorPane>
